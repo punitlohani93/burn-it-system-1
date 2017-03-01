@@ -1,8 +1,7 @@
 'user strict';
 
-(function(){
-   
+(function () {
     angular.module('burnIt.main')
-       .controller('mainCrl',[]); 
+        .controller('mainCrl', []);
 
 })();
