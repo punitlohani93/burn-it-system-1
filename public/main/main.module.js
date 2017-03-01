@@ -2,9 +2,10 @@
     'use strict';
     angular.module('burnIt.main', ['ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
-            $routeProvider.when('/main', {
-                templateUrl: 'views/main.html',
-                controller: 'mainCtrl'
+            $routeProvider.when('/', {
+                templateUrl: 'main/views/main.html',
+                controller: 'mainCtrl',
+                controllerAs: "vm"
             });
         }])
 })();

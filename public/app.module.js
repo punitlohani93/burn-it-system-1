@@ -1,10 +1,10 @@
-'use strict';
 
-angular.module('burnIt', [
-    // 'ngRoute',
-    // 'burnIt.main'
-])
-    .controller('burnCtrl', ['$scope', '$rootScope', '$location', function ($scope, $rootScope, $location) {
-        console.log("WORKS!");
-        $scope.test = "Howdy";
-    }]);
+angular
+    .module('burnIt', [
+        'burnIt.main'
+    ])
+    .controller('burnCtrl', ['$scope', burnCtrl]);
+
+function burnCtrl($scope) {
+    console.log("WORKS!");
+};
