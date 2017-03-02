@@ -2,7 +2,8 @@
 angular
     .module("burnIt", [
         "burnIt.main",
-        "burnIt.planning"
+        "burnIt.planning",
+        "burnIt.workout"
     ])
     .service("CommonSvc", function () {
         var self = this;
